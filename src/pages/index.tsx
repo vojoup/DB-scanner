@@ -12,20 +12,22 @@ const Home: NextPage = () => {
       <div className="flex grow flex-col items-center justify-center">
         <div className="text-2xl font-bold">Please log in below</div>
         <div className="p-4" />
-        <button
-          onClick={() => signIn('google')}
-          className="flex items-center gap-2 rounded bg-gray-200 px-4 py-2 text-2xl text-black"
-        >
-          <span>Sign in with Google</span>
-          <FaGoogle />
-        </button>
-        <button
-          onClick={() => signIn('github')}
-          className="flex items-center gap-2 rounded bg-gray-200 px-4 py-2 text-2xl text-black"
-        >
-          <span>Sign in with GitHub</span>
-          <FaGithub />
-        </button>
+        <div className="flex flex-col gap-2">
+          <button
+            onClick={() => signIn('google')}
+            className="flex items-center gap-2 rounded bg-gray-200 px-4 py-2 text-2xl text-black"
+          >
+            <span>Sign in with Google</span>
+            <FaGoogle />
+          </button>
+          <button
+            onClick={() => signIn('github')}
+            className="flex items-center gap-2 rounded bg-gray-200 px-4 py-2 text-2xl text-black"
+          >
+            <span>Sign in with GitHub</span>
+            <FaGithub />
+          </button>
+        </div>
       </div>
     );
 
