@@ -2,6 +2,9 @@
 
 Keep track of the contents of your storage boxes with QR codes
 
+See at [scanner-go.vercel.app](scanner-go.vercel.app
+)
+
 ## TODO
 
 - [ ] QR scanner
